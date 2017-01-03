@@ -10,10 +10,17 @@
     "gl-mat4": "^1.1.4"
   },
   "devDependencies": {
+    "budo": "^9.3.0",
+    "gh-pages": "^0.12.0",
+    "load-wavefront-obj": "^0.6.2",
+    "mkdirp": "^0.5.1",
     "standard": "^8.6.0",
     "tape": "^4.6.3"
   },
   "scripts": {
+    "demo": "budo --open --live --host=localhost --dir=demo/asset demo/browser.js",
+    "deploy": "mkdirp example-dist && npm run dist:index:html && browserify demo/browser.js > example-dist/bundle.js && cp ./demo/asset/* ./example-dist/ && gh-pages -d example-dist",
+    "dist:index:html": "echo '</script><script src=\"bundle.js\">' | htmlify > example-dist/index.html",
     "test": "standard && tape test/**/*.js"
   },
   "repository": {
@@ -28,6 +35,8 @@
     "perspective",
     "3d",
     "webgl",
+    "scene",
+    "demo",
     "zoom"
   ],
   "author": "Chinedu Francis Nwafili <frankie.nwafili@gmail.com>",

@@ -39,6 +39,16 @@ Changes to the `demo` and `src` directories will now live reload in your browser
 
 ```js
 var createCamera = require('create-orbit-camera')
+
+var cameraData = createCamera({
+ position: [0, 3, 5],
+ target: [0, 0, 0],
+ xRadians: Math.PI / 2,
+ yRadians: -Math.PI / 3.5
+})
+
+console.log(cameraData.viewMatrix) // ...
+console.log(cameraData.position) // ...
 ```
 
 ## API
