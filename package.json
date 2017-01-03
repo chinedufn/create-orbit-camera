@@ -1,0 +1,39 @@
+{
+  "name": "create-orbit-camera",
+  "version": "0.0.1",
+  "description": "Create a camera that orbits a target",
+  "main": "src/create-orbit-camera.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "gl-mat4": "^1.1.4"
+  },
+  "devDependencies": {
+    "standard": "^8.6.0",
+    "tape": "^4.6.3"
+  },
+  "scripts": {
+    "test": "standard && tape test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinedufn/create-orbit-camera.git"
+  },
+  "keywords": [
+    "orbit",
+    "camera",
+    "control",
+    "controls",
+    "perspective",
+    "3d",
+    "webgl",
+    "zoom"
+  ],
+  "author": "Chinedu Francis Nwafili <frankie.nwafili@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chinedufn/create-orbit-camera/issues"
+  },
+  "homepage": "https://github.com/chinedufn/create-orbit-camera#readme"
+}
