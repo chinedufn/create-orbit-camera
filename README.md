@@ -57,7 +57,7 @@ console.log(cameraData.position) // ...
 
 #### options
 
-###### position
+###### options.position
 
 Type: `Array[3]`
 
@@ -65,7 +65,9 @@ Default: `[0, 1, -10]`
 
 Your camera's position in world space.
 
-###### up
+Note: This is your position BEFORE applying your X and Y axis rotations.
+
+###### options.up
 
 Type: `Array[3]`
 
@@ -73,7 +75,7 @@ Default: `[0, 1, 0]`
 
 The up direction. This is almost always `1` in the Y direction unless you're doing something very strange.
 
-###### target
+###### options.target
 
 Type: `Array[3]`
 
@@ -81,7 +83,7 @@ Default: `[0, 0, 0]`
 
 The position in world space that your camera is looking at.
 
-###### xRadians
+###### options.xRadians
 
 Type: `Number`
 
@@ -91,7 +93,7 @@ The number of radians to rotate about your target about the X axis who's origin 
 
 If your thumb is pointed to your left the direction that your fingers rotate is the direction that your camera rotates.
 
-###### yRadians
+###### options.yRadians
 
 Type: `Number`
 
