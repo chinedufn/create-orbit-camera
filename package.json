@@ -1,6 +1,6 @@
 {
   "name": "create-orbit-camera",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create a camera that orbits a target",
   "main": "src/create-orbit-camera.js",
   "directories": {
